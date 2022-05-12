@@ -1,0 +1,166 @@
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+td {
+    background-color: #4ee534;
+    opacity: 0%;
+    /* 
+      Old dimension was 47x47 for 5x5 pixelmap
+    */
+    height: 55px; 
+    width: 55px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  img {
+    border: 1px solid black;
+  }
+
+  textarea {
+    padding: 12px 12px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+
+  .questionaire textarea {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 20px;
+  }
+
+  .feedback textarea {
+    width: 50%;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  .ModelDiv img {
+    width: 135px;
+    height: 135px;
+    transition: .1s;
+    margin: 0 auto;
+  }
+
+  .ModelDiv img:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(2.5); 
+  }
+
+  .ModelDiv table:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(2.5); 
+  }
+
+  .div-questionaire-images img {
+    width: 190px;
+    height: 190px;
+    transition: .1s;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .div-questionaire-images label {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+  }
+
+  .div-questionaire-images img:hover{
+    -ms-transform: scale(1.25); /* IE 9 */
+    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    transform: scale(2); 
+  }
+
+  .row img {
+    border: none;
+  }
+
+  html, body, #root, .app {
+    height: 100%;
+    width: 100%; 
+    overflow: auto;
+    
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  .main-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .header {
+    position: relative;
+    margin: auto;
+  }
+
+  .container {
+    height: 870px;
+    position: relative; 
+    padding-top: 30px; 
+  }
+ 
+  .content {
+    height: 100%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #male, #female, #other, #no-answer, #none,#ongoing, #finished {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+
+  #female, #other, #no-answer, #ongoing, #finished {
+    margin-left: 10px;
+  }
+
+  .my-footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 30px;
+ }
+
+  @media only screen and (max-device-width : 1023px) {
+    #Login, #Home, #Survey {
+      display: none;
+    }
+
+    #ValidateScreenSize {
+      display: inline;
+    }
+  }
+
+  @media only screen and (min-device-width : 1024px) {
+    #ValidateScreenSize {
+      display: none;
+    }
+}
